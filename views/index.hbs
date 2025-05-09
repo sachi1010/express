@@ -1,11 +1,34 @@
-<h1>
-    users list
-</h1>
+{{!-- <h1>Users List</h1>
+
+<form action="/search" method="get">
+  <input type="text" name="q" placeholder="Search by name/email">
+  <button type="submit">Search</button>
+</form>
+
+<form action="/filter" method="get">
+  <input type="number" name="min" placeholder="Min Age">
+  <input type="number" name="max" placeholder="Max Age">
+  <button type="submit">Filter</button>
+</form>
+
+<form action="/add" method="post">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="number" name="age" placeholder="Age" required>
+  <button type="submit">Add User</button>
+</form>
 
 <ul>
-    {{#each users}}
-    <li>
-        {{this.name}} -{{this.email}}
+  {{#each users}}
+    <li>{{this.name}} - {{this.email}} - {{this.age}}
+      <form action="/update/{{this._id}}" method="post" style="display:inline">
+        <input type="text" name="name" placeholder="New Name">
+        <input type="email" name="email" placeholder="New Email">
+        <input type="number" name="age" placeholder="New Age">
+        <button type="submit">Update</button>
+      </form>
+      <a href="/delete/{{this._id}}">Delete</a>
     </li>
-    {{/each}}
+  {{/each}}
 </ul>
+ --}}
